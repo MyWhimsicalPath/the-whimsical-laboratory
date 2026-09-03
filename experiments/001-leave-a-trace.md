@@ -16,7 +16,7 @@ Then choose **Commit changes**. A commit is simply a named checkpoint in the his
 
 ## My first trace
 
-_Add your sentence here._
+Today I am curious about finding new tools to customize my digital workspace.
 
 ## What to notice afterward
 
