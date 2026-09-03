@@ -13,3 +13,6 @@ function draw() {
     random(2, 18)
   );
 }
+function resetCanvas() {
+  background(20);
+}
