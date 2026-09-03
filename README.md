@@ -11,11 +11,17 @@ This is not a productivity system and nothing here needs to become a Serious Pro
 - [Field Notes](discoveries/README.md) — useful, beautiful, or wonderfully strange findings
 - [Specimen Drawer](templates/idea-seed.md) — a reusable page for capturing a new idea
 
-## Current experiment
+## Experiments
 
-[Experiment 001: Leave a Trace](experiments/001-leave-a-trace.md)
+### [Experiment 001: Leave a Trace](experiments/001-leave-a-trace.md)
 
-The first experiment is intentionally tiny. Its purpose is to make GitHub feel less like software infrastructure and more like a notebook with an unusually good memory.
+A deliberately tiny first experiment: change a file, commit it, and leave a trace in the repository's history.
+
+### [Experiment 002: Trembling Spores](experiments/002-trembling-spores/)
+
+A cursor-sensitive generative organism made with HTML, CSS, JavaScript, and p5.js.
+
+🦠 [Enter the live specimen](https://mywhimsicalpath.github.io/the-whimsical-laboratory/experiments/002-trembling-spores/)
 
 ## Laboratory rules
 
