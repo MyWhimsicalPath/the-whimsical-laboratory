@@ -7,3 +7,4 @@ An experiment should be small enough to begin before certainty arrives. It may b
 ## Experiments
 
 - [001 — Leave a Trace](001-leave-a-trace.md)
+- [002 — Trembling Spores](002-trembling-spores/README.md)
