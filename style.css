@@ -81,3 +81,8 @@ h2 {
   letter-spacing: 2px;
   text-decoration: none;
 }
+
+.specimen-card a:hover {
+  background: #a9bd91;
+  color: #0d100c;
+}
