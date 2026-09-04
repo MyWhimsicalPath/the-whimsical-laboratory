@@ -32,3 +32,52 @@ h1 {
   font-style: italic;
   line-height: 1.6;
 }
+
+main {
+  width: min(700px, 88%);
+  margin: 60px auto;
+}
+
+h2 {
+  margin-bottom: 24px;
+  color: #879878;
+  font-family: monospace;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.specimen-card {
+  padding: 30px;
+  border: 1px solid #46523e;
+  background: #141912;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.3);
+}
+
+.specimen-number {
+  color: #879878;
+  font-family: monospace;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+.specimen-card h3 {
+  margin: 10px 0;
+  color: #d5bd72;
+  font-size: 28px;
+}
+
+.specimen-card p {
+  line-height: 1.6;
+}
+
+.specimen-card a {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 10px 16px;
+  border: 1px solid #a9bd91;
+  color: #dce8cd;
+  font-family: monospace;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
