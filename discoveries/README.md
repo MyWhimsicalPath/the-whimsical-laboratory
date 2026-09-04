@@ -11,3 +11,7 @@ A field note can contain:
 - whether you want to return
 
 The point is not to collect everything. The point is to remember what changed the shape of an idea.
+
+## Collected notes
+
+- [Field Note 001 — Print on My Desk](001-print-on-my-desk.md) — a moderated web-to-thermal-printer project that connects to the future e-ink display and Owl Postal Empire
