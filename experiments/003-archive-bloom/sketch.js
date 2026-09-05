@@ -1,5 +1,7 @@
 function setup() {
-  createCanvas(400, 400);
+  let canvas = createCanvas(400, 400);
+canvas.parent("canvas-container");
+  
   background(20);
   angleMode(DEGREES);
 }
