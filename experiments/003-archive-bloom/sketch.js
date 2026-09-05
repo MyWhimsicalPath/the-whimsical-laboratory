@@ -31,3 +31,7 @@ function drawFlower(x, y) {
 
   pop();
 }
+
+function clearArchive() {
+  background(20);
+}
