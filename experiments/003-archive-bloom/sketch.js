@@ -11,7 +11,11 @@ function mousePressed() {
 }
 
 function drawFlower(x, y) {
-  let petals = floor(random(5, 17));
+  let petalLimit = Number(
+  document.getElementById("petal-range").value
+);
+
+let petals = floor(random(5, petalLimit + 1));
   let size = random(20, 50);
 
   push();
