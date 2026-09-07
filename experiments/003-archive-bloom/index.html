@@ -28,7 +28,8 @@
 
       <div class="mutation-control">
   <label for="petal-range">
-    Mutation limit
+    Petal count:
+    <output id="petal-output">17</output>
   </label>
 
   <input
@@ -37,6 +38,7 @@
     min="6"
     max="24"
     value="17"
+    oninput="document.getElementById('petal-output').value = this.value"
   >
 </div>
       
