@@ -42,3 +42,29 @@ button:hover {
   background: #80916f;
   color: #11130f;
 }
+
+.mutation-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 24px auto;
+  color: #aaa894;
+}
+
+.mutation-control label {
+  font-family: monospace;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.mutation-control input {
+  width: min(280px, 80%);
+  accent-color: #879878;
+  cursor: pointer;
+}
+
+.mutation-control output {
+  color: #d5bd72;
+}
