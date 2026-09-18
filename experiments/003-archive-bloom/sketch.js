@@ -8,6 +8,21 @@ canvas.parent("canvas-container");
   angleMode(DEGREES);
 }
 
+function draw() {
+  background(20);
+
+  for (let flower of flowers) {
+    flower.opacity = max(
+      0,
+      flower.opacity - 25 * deltaTime / 1000
+    );
+
+    drawFlower(flower);
+  }
+
+  flowers = flowers.filter(flower => flower.opacity > 0);
+}
+
 function mousePressed() {
   if (
     mouseX >= 0 && mouseX < width &&
@@ -28,26 +43,26 @@ function mousePressed() {
   }
 }
 
-function drawFlower(x, y) {
-  let petals = Number(
-  document.getElementById("petal-range").value
-);
-  let size = random(20, 50);
-
+function drawFlower(flower) {
   push();
-  translate(x, y);
-  rotate(random(360));
+  translate(flower.x, flower.y);
+  rotate(flower.angle);
 
   noStroke();
-  fill(150, 175, 125, 80);
+  fill(150, 175, 125, flower.opacity * 80 / 255);
 
-  for (let i = 0; i < petals; i++) {
-    ellipse(0, size / 3, size / 3, size);
-    rotate(360 / petals);
+  for (let i = 0; i < flower.petals; i++) {
+    ellipse(
+      0,
+      flower.size / 3,
+      flower.size / 3,
+      flower.size
+    );
+    rotate(360 / flower.petals);
   }
 
-  fill(210, 185, 100);
-  circle(0, 0, size / 4);
+  fill(210, 185, 100, flower.opacity);
+  circle(0, 0, flower.size / 4);
 
   pop();
 }
