@@ -1,3 +1,5 @@
+let flowers = [];
+
 function setup() {
   let canvas = createCanvas(400, 400);
 canvas.parent("canvas-container");
@@ -7,7 +9,17 @@ canvas.parent("canvas-container");
 }
 
 function mousePressed() {
-  drawFlower(mouseX, mouseY);
+  if (
+    mouseX >= 0 && mouseX < width &&
+    mouseY >= 0 && mouseY < height
+  ) {
+    flowers.push({
+      x: mouseX,
+      y: mouseY
+    });
+
+    drawFlower(mouseX, mouseY);
+  }
 }
 
 function drawFlower(x, y) {
