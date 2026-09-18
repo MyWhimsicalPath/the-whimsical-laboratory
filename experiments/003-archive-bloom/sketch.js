@@ -14,7 +14,7 @@ function draw() {
   for (let flower of flowers) {
     flower.opacity = max(
       0,
-      flower.opacity - 25 * deltaTime / 1000
+      flower.opacity - 75 * deltaTime / 1000
     );
 
     drawFlower(flower);
