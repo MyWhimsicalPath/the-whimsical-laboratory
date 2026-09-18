@@ -14,9 +14,15 @@ function mousePressed() {
     mouseY >= 0 && mouseY < height
   ) {
     flowers.push({
-      x: mouseX,
-      y: mouseY
-    });
+  x: mouseX,
+  y: mouseY,
+  petals: Number(document.getElementById("petal-range").value),
+  size: random(20, 50),
+  angle: random(360),
+  opacity: 255
+});
+
+    
 
     drawFlower(mouseX, mouseY);
   }
@@ -47,5 +53,6 @@ function drawFlower(x, y) {
 }
 
 function clearArchive() {
+  flowers = [];
   background(20);
 }
